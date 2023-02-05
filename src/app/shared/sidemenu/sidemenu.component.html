@@ -6,3 +6,14 @@
     {{item.texto}}
   </li>
 </ul>
+
+<br>
+
+<h2>Reactive</h2>
+<hr>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of reactiveMenu" [routerLink]="[item.ruta]" routerLinkActive=active>
+    {{item.texto}}
+  </li>
+</ul>
